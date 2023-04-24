@@ -3,7 +3,7 @@
 	import profilePic from '$lib/assets/profile-pic.jpg';
 </script>
 
-<h1>This is your Landing Page To Your Portfolio Template</h1>
+<h1>This is your Landing Page To Your Portfolio Templatte</h1>
 <h2>This is your main landing page</h2>
 
 
