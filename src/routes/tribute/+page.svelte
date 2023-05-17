@@ -3,6 +3,7 @@
 	import subject from '$lib/assets/MAC.png';
 	import groupPhoto from '$lib/assets/groupPhoto.jpg';
 	import instaPHOTO from '$lib/assets/instagram_logo_2016.svg.webp';
+	import HeroImageButton from '$lib/components/hero/HeroImageButton.svelte';
 </script>
 
 
@@ -97,6 +98,7 @@
 																				 even booking a trip</p>
 
 
+
 	<div class='flex flex-col text-center mt-10 gap-5' id='links'>
 
 		<a class="flex place-content-center" id='instagram-link'
@@ -110,15 +112,17 @@
 			 href="https://Hut-Trip.zanderh2.repl.co"
 			 target="_blank">Click here to view the poster for our upcoming film!</a>
 
-		<a class="link" id='booking-link'
-			 href="https://Hut-Trip.zanderh2.repl.co"
-			 target="_blank">Click here to learn more about booking a trip with
-											 us!</a>
+		<HeroImageButton
+			title="Are you daring enough"
+			subtitle="to join us?"
+			buttonText="Plans & Pricing"
+		/>
 
 		<div class='spacer'></div>
 
 	</div>
 </div>
+
 
 
 

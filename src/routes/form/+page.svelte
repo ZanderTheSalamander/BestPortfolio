@@ -1,15 +1,20 @@
 
 <script>
 	import MAC from '$lib/assets/MAC.png';
+	import HeroVideoButton from '$lib/components/hero/HeroVideoButton.svelte';
 </script>
+
 <div class='wrapper'>
 	<div class="intro">
 		<img class="logo" src={MAC} alt="LOGO" width="500">
 		<!--     <img class="logo2" src ="MAC.png" alt="LOGO" width="500"> -->
 
 		<div class="intro-text">
-			<h1 id="title">🥾 Hiker Sign-Up 🥾</h1>
-			<p id="description">Please fill out this form with the required information for your hike.</p>
+			<h1 class='title' id="title">🥾 Hiker Sign-Up 🥾</h1>
+			<p
+				class='description' id="description">Please fill out this form with
+																						 the required
+													 information for your hike.</p>
 		</div>
 	</div>
 
@@ -93,6 +98,9 @@
 		</fieldset>
 
 
+
+
+
 		<fieldset>
 
 			<h1 id="optional-details">Optional Details</h1>
@@ -155,12 +163,25 @@
 	</form>
 </div>
 
+<div class='hero'>
+	<HeroVideoButton />
+</div>
+
+
 <style>
+		.hero{
+				border-top: 3px solid #3b3b4f;
+		}
 
     h1, p {
         margin: 1em auto;
         text-align: center;
     }
+
+		.description{
+        font-size: 1.5rem;
+				width: 75%;
+		}
 
     form {
         width: 60vw;
@@ -169,6 +190,12 @@
         margin: 0 auto;
         padding-bottom: 2em;
     }
+
+		.title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+		}
 
     fieldset {
         border: none;
